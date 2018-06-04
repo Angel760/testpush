@@ -1,0 +1,177 @@
+<div *ngIf="chapter && buttons">
+
+    <h1 class="main-headline no-margin text-pink text-center">{{chapter.pricingHeadline}}</h1>
+
+    <div class="box">
+        <div class="spacer-15"></div>
+        <div class="columns experiment">
+            <p class="secure-text-desktop phone-hide">{{buttons[0].securityText}}. Order with confidence!🔒
+                <br> Try it out for 60 days and if it doesn’t work for you, you’ll get your money back!
+            </p>
+            <div class="spacer-15"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+
+                        <div class="padding-horizontal-5">
+                            <div class="value-prop std-prop phone-hide">
+                                <h2 class="no-margin">&nbsp;</h2>
+                            </div>
+                            <div class="bg-grey std-value one-bag">
+                                <div class="mid-grey-bg text-center">
+                                    <div class="padding-20">
+                                        <h3 class="no-margin thin-text bag-number">{{chapter.tableColumnOneTitle}} </h3>
+                                        <h1 class="text-green no-margin price-discount">{{chapter.tableColumnOneDiscount}}</h1>
+                                    </div>
+                                </div>
+                                <div class="product-image">
+                                    <p class="serving-size">{{chapter.tableColumnOneServings}} servings</p>
+                                    <img class="img-responsive product-img" [src]="chapter.tableColumnOneImage" alt="{{chapter.name}} image">
+                                </div>
+                                <h5 class="reviews-row thin-text no-margin">
+                  <img class="img-responsive" src="https://skinnyfit-com-cdn.s3.amazonaws.com/images/Detox/stars/four-half-stars.png">
+                  <span class="reviews-number">20.7k Reviews</span>
+                </h5>
+                                <div class="product-details">
+                                    <h3 class="no-margin">
+                    <del class="msrp thin-text">(${{chapter.tableColumnOneMSRP}})</del>
+                    <span class="text-pink">${{chapter.tableColumnOnePrice}}</span>
+                    <sup class="text-pink">+S&amp;H</sup>
+                  </h3>
+                                    <div class="spacer-10"></div>
+                                </div>
+
+                                <div class="cta padding-horizontal-10 text-center">
+                                    <a class="btn btn-primary btn-block text-white" href="/checkout?offerCode=detox-sub">{{buttons[2].text}}</a>
+                                    <div class="spacer-5"></div>
+                                    <p class="no-margin post-cta">
+                                        <span>${{chapter.tableColumnOnePrice}}/month.
+                          <span class="text-green"></span>
+                                        <span>{{buttons[2].securityText}}.</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="spacer-5 phone-only"></div>
+                                <div class="spacer phone-hide"></div>
+                            </div>
+                            <div class="spacer-15 phone-only"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+
+                        <div class="padding-horizontal-5">
+                            <div class="value-prop std-prop phone-hide">
+                                <h2 class="no-margin">&nbsp;</h2>
+                            </div>
+                            <div class="bg-grey std-value two-bag">
+                                <div class="mid-grey-bg text-center">
+                                    <div class="padding-20">
+                                        <h3 class="no-margin thin-text bag-number">{{chapter.tableColumnTwoTitle}} </h3>
+                                        <h1 class="text-green no-margin price-discount">{{chapter.tableColumnTwoDiscount}}</h1>
+                                    </div>
+                                </div>
+                                <div class="product-image">
+                                    <p class="serving-size">{{chapter.tableColumnTwoServings}} servings</p>
+                                    <img class="img-responsive product-img" [src]="chapter.tableColumnTwoImage" alt="{{chapter.name}} image">
+                                </div>
+                                <h5 class="reviews-row thin-text no-margin">
+                  <img class="img-responsive" src="https://skinnyfit-com-cdn.s3.amazonaws.com/images/Detox/stars/four-half-stars.png">
+                  <span class="reviews-number">20.7k Reviews</span>
+                </h5>
+                                <div class="product-details">
+                                    <h3 class="no-margin">
+                    <del class="msrp thin-text">(${{chapter.tableColumnTwoMSRP}})</del>
+                    <span class="text-pink">{{chapter.tableColumnTwoPrice}}</span>
+                    <sup class="text-pink">+S&amp;H</sup>
+                  </h3>
+                                    <div class="spacer-10"></div>
+                                </div>
+
+                                <div class="cta text-center straight-sale-cta">
+                                    <div class="padding-horizontal-5">
+                                        <a class="btn btn-straight btn-block text-white" href="/checkout?offerCode=skinny-fit-three">Buy Now »</a>
+                                        <div class="spacer-5"></div>
+                                        <p class="no-margin post-cta">One time purchase.</p>
+                                    </div>
+                                </div>
+                                <div class="cta text-center subscription-cta">
+                                    <div class="padding-horizontal-5">
+                                        <a class="btn btn-primary btn-block text-white" href="/checkout?offerCode=skinny-fit-three-sub">{{buttons[2].text}}</a>
+                                        <div class="spacer-5"></div>
+                                        <p class="no-margin post-cta">
+                                            <span>${{chapter.tableColumnTwoPrice}}/month.
+                        <span class="text-green"></span>
+                                            <span>{{buttons[2].securityText}}.</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="spacer-5 phone-only"></div>
+                                <div class="spacer-10 phone-hide"></div>
+                            </div>
+                            <div class="spacer-15 phone-only"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="padding-horizontal-5 three-bags">
+                            <div class="value-prop best-prop">
+                                <h2 class="no-margin text-white">BEST VALUE!</h2>
+                            </div>
+                            <div class="bg-grey best-value three-bag">
+                                <div class="mid-grey-bg text-center">
+                                    <div class="padding-20">
+                                        <h3 class="no-margin thin-text bag-number">{{chapter.tableColumnThreeTitle}} </h3>
+                                        <h1 class="text-green no-margin price-discount">{{chapter.tableColumnThreeDiscount}}</h1>
+                                    </div>
+                                </div>
+                                <div class="product-image">
+                                    <p class="serving-size">{{chapter.tableColumnThreeServings}} servings</p>
+                                    <img class="img-responsive product-img" [src]="chapter.tableColumnThreeImage" alt="{{chapter.name}} image">
+                                </div>
+                                <h5 class="reviews-row thin-text no-margin">
+                  <img class="img-responsive" src="https://skinnyfit-com-cdn.s3.amazonaws.com/images/Detox/stars/four-stars.png">
+                  <span class="reviews-number">17.2k Reviews</span>
+                </h5>
+                                <div class="product-details">
+                                    <h3 class="no-margin">
+                    <del class="msrp thin-text">(${{chapter.tableColumnThreeMSRP}})</del>
+                    <span class="text-pink">${{chapter.tableColumnThreePrice}}</span>
+                    <sup class="text-pink">+S&amp;H</sup>
+                  </h3>
+                                    <div class="spacer-10"></div>
+                                </div>
+                                <div class="cta text-center straight-sale-cta">
+                                    <div class="padding-horizontal-5">
+                                        <a class="btn btn-straight btn-block text-white" href="/checkout?offerCode=skinny-fit-three">Buy Now »</a>
+                                        <div class="spacer-5"></div>
+                                        <p class="no-margin post-cta">One time purchase.</p>
+                                    </div>
+                                </div>
+                                <div class="cta text-center subscription-cta">
+                                    <div class="padding-horizontal-5">
+                                        <a class="btn btn-primary btn-block text-white" href="/checkout?offerCode=skinny-fit-three-sub">{{buttons[2].text}}</a>
+                                        <div class="spacer-5"></div>
+                                        <p class="no-margin post-cta">
+                                            <span>${{chapter.tableColumnThreePrice}}/month.
+                        <span class="text-green"></span>
+                                            <span>{{buttons[2].securityText}}.</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="spacer-5 phone-only"></div>
+                                <div class="spacer-10 phone-hide"></div>
+                            </div>
+                            <div class="spacer-15 phone-only"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
